@@ -27,10 +27,10 @@ class QuickStatement
     def new_candidate_statements
       [
         'CREATE',
-        ['LAST', 'P31', 'Q5'].join("\t"),
+        ['LAST', 'P31', 'Q5'].join("\t"), # human
         ['LAST', 'Len', result[:name].tidy.quoted].join("\t"),
         ['LAST', 'Den', description.quoted].join("\t"),
-        ['LAST', 'P106', 'Q82955'].join("\t")
+        ['LAST', 'P106', 'Q19772737'].join("\t") # political candidate
       ].join("\n")
     end
 
